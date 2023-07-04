@@ -12,7 +12,7 @@ subplot(4,2,1)
 imshow(uint8(abs(a2_shift)));
 title('q1-res1');
 
-%% ideal filter (it has ringing)
+%%  ideal filter (it has ringing)
 h=ones(m,n);
 k=5;
    h(1:500,1:500)=0;
