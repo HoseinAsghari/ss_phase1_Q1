@@ -60,7 +60,7 @@ end
     HPF_image_gaussian=a2_shift.*fftshift(h);
     HPF_image_gaussian_inverse=ifftshift(abs(ifft2(HPF_image_gaussian)),3);
    HPF_image_gaussian_inverse_real=abs(HPF_image_gaussian_inverse);   
-subplot(4,2,7)
+subplot(4,2,7) 
 mesh(h)
 subplot(4,2,8)
 imshow(uint8(HPF_image_gaussian_inverse_real));
