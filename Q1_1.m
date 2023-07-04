@@ -1,7 +1,7 @@
 clc;clear all;
 a1=imread("q1.jpg");% load image to workspace 
 a2=fft2(a1); % 2d fast fourier transform
-a2_shift=fftshift(a2,3);% it brings dc point to the center and in image dc point are purely white
+a2_shift=fftshift(a2,3);%  it brings dc point to the center and in image dc point are purely white
 [m,n,c]=size(a1);%get size of matrix related to image
 figure(1)
 %%
