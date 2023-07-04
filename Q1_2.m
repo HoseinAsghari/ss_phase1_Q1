@@ -2,7 +2,7 @@ clc;clear all;
 f=imread("q1.jpg");
 f2=fft2(f);
 F=fftshift(f2,3);% it brings dc point to the center and in image dc point are purely white
-[m,n,c]=size(f);%get size of matrix related to image
+[m,n,c]=size(f);%get size of matrix related to image 
 [u,v] = meshgrid(-m/2:m/2-1,-n/2:n/2-1);
 k=1e-6;
 H_equivalent=4*(pi^2).*(u.^2 + v.^2);
