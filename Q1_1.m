@@ -50,7 +50,7 @@ subplot(4,2,6)
 imshow(uint8(HPF_image_bw_inverse_real));
 title('sharpened with Butterworth')
 
-   %% Gaussian filter(it does not have ringing)
+   %%  Gaussian filter(it does not have ringing)
 for i=1:m
     for j=1:n
       d(i,j)=sqrt(((i-(m/2))^2)+((j-(n/2))^2));
