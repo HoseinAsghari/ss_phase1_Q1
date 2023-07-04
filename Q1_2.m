@@ -16,7 +16,7 @@ H_equivalent=4*(pi^2).*(u.^2 + v.^2);
 H_equivalent=fftshift(H_equivalent);
  h=uint8(abs(k*ifft2(H_equivalent.*F)));
 new_a_bad=f+h;
-  new_a_bad_shift=ifftshift((new_a_bad),3);
+  new_a_bad_shift=ifftshift((new_a_bad),3); 
   %% plot
   figure(1)
   subplot(1,3,2)
