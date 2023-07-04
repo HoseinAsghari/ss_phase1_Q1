@@ -15,7 +15,7 @@ title('q1-res1');
 %%  ideal filter (it has ringing)
 h=ones(m,n);
 k=5;
-   h(1:500,1:500)=0;
+   h(1:500,1:500)=0; % we set frequencies below 500 to 0
    h_f=fftshift(h);
    new_a=ifft2(((1+ k.*h_f).*a2_shift));%% we add it by 1 not to get zero
 new_a_shift=ifftshift((new_a),3);
