@@ -26,7 +26,7 @@ title('mesh show')
 subplot(4,2,4)
 imshow(uint8(new_a_shift));
 title('sharpened with ideal filter in the book')
-%% buterworth filter(it does not have ringing)
+%%  buterworth filter(it does not have ringing)
 cut_off=1;%our cut_off frequency of sigma in gaussian distribution
 order=0.5; % our butterworth order
 d=zeros(m,n);
