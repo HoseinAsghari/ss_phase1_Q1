@@ -46,7 +46,7 @@ h=fftshift(h);
 subplot(4,2,5)
  mesh(h);
 title('mesh show')
-subplot(4,2,6)
+subplot(4,2,6) 
 imshow(uint8(HPF_image_bw_inverse_real));
 title('sharpened with Butterworth')
 
