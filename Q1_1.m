@@ -57,6 +57,7 @@ for i=1:m
  h(i,j)=1-exp(-(d(1,j)^2)/(2*cut_off.^2));
     end
 end
+%% finally inverse fourier transform and imwrite
     HPF_image_gaussian=a2_shift.*fftshift(h);
     HPF_image_gaussian_inverse=ifftshift(abs(ifft2(HPF_image_gaussian)),3);
    HPF_image_gaussian_inverse_real=abs(HPF_image_gaussian_inverse);   
